@@ -2,22 +2,25 @@
 
 IPAddress local_IP(192, 168, 1, 1);
 
-cAccesspoint::cAccesspoint(String _ssid, String _password)
+cAccessPoint::cAccessPoint(String _ssid, String _password)
 {
   ssid = _ssid;
   password = _password;
   local_ip = local_IP;
-  util::log("new Accesspoint");
+  util::log("new Access Point");
 }
 
-String cAccesspoint::get_ssid() {
+String cAccessPoint::get_ssid()
+{
   return ssid;
 }
 
-String cAccesspoint::get_password() {
+String cAccessPoint::get_password()
+{
   return password;
 }
 
-IPAddress cAccesspoint::get_localIP() {
+IPAddress cAccessPoint::get_localIP()
+{
   return local_ip;
 }

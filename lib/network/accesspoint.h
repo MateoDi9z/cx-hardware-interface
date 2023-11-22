@@ -4,9 +4,10 @@
 #include "Arduino.h"
 #include "common.h"
 
-class cAccesspoint {
+class cAccessPoint
+{
 public:
-  cAccesspoint(String _ssid, String _password);
+  cAccessPoint(String _ssid, String _password);
 
   String get_ssid();
   String get_password();

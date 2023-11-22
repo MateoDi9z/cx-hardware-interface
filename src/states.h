@@ -8,13 +8,13 @@
 class cControl {
   public:
     cControl();
-    bool accesspointMode();
+    bool accessPointMode();
 
     int get_ap_status();
 
   private:
     int ap_status;
-    cAccesspoint *ap;
+    cAccessPoint *ap;
 };
 
 #endif

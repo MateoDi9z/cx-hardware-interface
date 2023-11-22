@@ -2,18 +2,25 @@
 
 #include "common.h"
 #include "states.h"
+#include "wserver.h"
 
 cControl control;
+cWebServer server;
 
-void setup() {
+void setup()
+{
   Serial.begin(912600);
 
   util::log("Coexist Hardware");
 
-  control.accesspointMode();
+  control.accessPointMode();
+
+  server.routes();
 }
 
-void loop() {
-  util::log(String(control.get_ap_status()));
+void loop()
+{
   delay(500);
+
+  server.handler();
 }

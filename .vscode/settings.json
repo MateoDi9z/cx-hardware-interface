@@ -4,5 +4,6 @@
     "*.layout-template": "vue",
     "*.vue": "vue",
     "cmath": "cpp"
-  }
+  },
+  "cSpell.words": ["CACCESSPOINT"]
 }
